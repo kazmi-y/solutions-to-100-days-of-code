@@ -45,9 +45,9 @@ people = int(input("How many people to split the bill? "))
 Convert the tip percentage to a decimal, calculate the total bill with tip, and determine the amount per person.
 
 ```python
-tip_as_percent = tip / 100
-bill_with_tip = bill * (1 + tip_as_percent)
-bill_per_person = bill_with_tip / people
+tip_as_percent = (input_tip) / 100
+bill_with_tip = (input_bill) * (1 + tip_as_percent)
+bill_per_person = bill_with_tip / (input_people)
 final_amount = round(bill_per_person, 2)
 ```
 
