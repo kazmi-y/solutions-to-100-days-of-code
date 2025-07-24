@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
 # Treasure Island: Adventure Game
 
 ## Problem Overview
@@ -122,6 +120,7 @@ You found the treasure! You Win!
 This project demonstrates how to build an interactive, text-based adventure using Python's basic features. Through user input, print statements, and conditional checks, players can experience different outcomes, learning valuable programming and logic skills along the way.
 
 Try altering the messages, adding new decision points, or expanding the story as exercises to improve your control flow and creative thinking.
+Flowchat = https://viewer.diagrams.net/index.html?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload#%7B%22pageId%22%3A%22C5RBs43oDa-KdzZeNtuy%22%7D
 
 <div style="text-align: center">⁂</div>
 
