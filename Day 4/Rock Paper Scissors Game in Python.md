@@ -1,12 +1,8 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
-# regeenrate the .mb file for this script in the same style as above.
-
-Certainly! Here’s a beginner-friendly README.md (markdown) file that explains your attached Rock_Paper_Scissors-1.ipynb script, step by step, using only the code that appears in your notebook.
-
 # Rock Paper Scissors Game in Python
 
-This README walks you through the [Rock_Paper_Scissors-1.ipynb](Rock_Paper_Scissors-1.ipynb) notebook, helping you understand how to play and how the code works—even if you’re just starting with Python or Jupyter notebooks!
+This README walks you through the [Rock_Paper_Scissors.ipynb](Rock_Paper_Scissors.ipynb) notebook, helping you understand how to play and how the code works—even if you’re just starting with Python or Jupyter notebooks!
 
 ## What Is This?
 
