@@ -89,12 +89,6 @@ else:
     - 2 for scissors
 4. **See who wins!**
 
-## What’s Good About This Version?
-
-- The computer can pick any option (rock, paper, or scissors).
-- The spelling for `'scissors'` is correct.
-- The program tells you if you win, lose, or draw.
-
 
 ## Ideas to Improve
 
