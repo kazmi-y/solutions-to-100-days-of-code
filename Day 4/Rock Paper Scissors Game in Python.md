@@ -1,65 +1,65 @@
 <img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
 
+# regeenrate the .mb file for this script in the same style as above.
+
+Certainly! Here’s a beginner-friendly README.md (markdown) file that explains your attached Rock_Paper_Scissors-1.ipynb script, step by step, using only the code that appears in your notebook.
+
 # Rock Paper Scissors Game in Python
 
-This README explains how the provided [Rock_Paper_Scissors.ipynb](Rock_Paper_Scissors.ipynb) notebook builds a simple Rock, Paper, Scissors game using Python and NumPy. If you're new to programming or Jupyter Notebooks, don’t worry—this will walk you through each cell, step by step.
+This README walks you through the [Rock_Paper_Scissors-1.ipynb](Rock_Paper_Scissors-1.ipynb) notebook, helping you understand how to play and how the code works—even if you’re just starting with Python or Jupyter notebooks!
 
 ## What Is This?
 
-It's a classic "Rock, Paper, Scissors" game that you play against the computer in your notebook! You choose either rock, paper, or scissors, and so does the computer (randomly). The game then tells you who won.
+This notebook lets you play the classic “Rock, Paper, Scissors” game against the computer. You’ll pick one of the three—rock, paper, or scissors—and the computer will also make a choice. The notebook will then tell you who won.
 
-## Code Walkthrough
+## Code Explanation, Step by Step
 
-Below is an explanation of what each code cell in the notebook does, in order:
-
-### **1. Importing NumPy**
+### 1. Import the Random Module
 
 ```python
-import numpy as np
+import random
 ```
 
-- **What it does:** Brings in the NumPy library, which allows us to generate random numbers (needed for the computer’s move).
-- **If you’re new:** NumPy is a popular library in Python for handling arrays and random number generation and is commonly used in many games and data science projects.
+- **What this does:** Brings in Python’s built-in `random` module, which allows the computer to make a random choice.
+- **Beginner tip:** Modules are like toolboxes. `random` helps your programs do things randomly, like flipping a coin or, in this case, picking rock, paper, or scissors.
 
 
-### **2. Defining Choices**
+### 2. Set Up the Choices
 
 ```python
-data = {'rock': 0, 'paper':1, 'Sissors':2}
+data = {'rock': 0, 'paper':1, 'scissors':2}
 ```
 
-- **What it does:** Sets up a dictionary linking each word (“rock”, “paper”, “Sissors”) to a number.
-    - `rock` = 0
-    - `paper` = 1
-    - `Sissors` = 2
-- **If you’re new:** Dictionaries like this help us translate between numbers and names.
+- **What this does:** Creates a dictionary named `data` to link the string names of choices (like 'rock') to numbers (0, 1, or 2).
+    - rock → 0
+    - paper → 1
+    - scissors → 2
+- **Why:** It helps the program turn words into numbers so they’re easier to compare in code.
 
 
-### **3. Computer Chooses Randomly**
+### 3. Computer Makes Its Move
 
 ```python
-computer_input = np.random.randint(0,2)
+computer_input = random.randint(0,2)
+# print(computer_input)
 ```
 
-- **What it does:** Makes the computer pick a random number: **0** or **1** (but not including **2**).
-- **Note:** This means the computer only ever picks between "rock" (0) or "paper" (1), not "Sissors" (2). This is an error; usually, you want to use `np.random.randint(0,3)` to include all three possibilities.
-- **If you’re new:** `np.random.randint(a, b)` generates a random integer from `a` (inclusive) to `b` (exclusive).
+- **What this does:** Asks the computer to pick a random number: 0, 1, or 2.
+    - This is possible because `random.randint(a, b)` returns a number from **a** up to **b** (BOTH included).
+- **Beginner tip:** Here, the computer can pick any of the three choices, thanks to the way `randint` works.
 
 
-### **4. Ask the User for a Choice**
+### 4. User Makes a Choice
 
 ```python
 user_input = int(input('Choose 0 for rock, 1 for paper and 2 for scissors: '))
 ```
 
-- **What it does:** Asks the user to type in a number representing their move:
-    - 0 = Rock
-    - 1 = Paper
-    - 2 = Scissors
-- **If you’re new:** The `input()` function gets input as text, and `int()` converts that text to a number.
+- **What this does:** Asks you (the user) to enter a number (0, 1, or 2) that matches your choice.
+- **Beginner tip:** The text you type is turned into a number, so the program can compare it to the computer’s choice.
 
 
-### **5. Determining the Winner**
+### 5. Figure Out Who Wins
 
 ```python
 if user_input == computer_input:
@@ -69,29 +69,48 @@ elif (user_input == 0 and computer_input == 2) or \
      (user_input == 2 and computer_input == 1):
     print('You win')
 else:
-    print('You loose')
+    print('You lose')
 ```
 
-- **What it does:**
-    - If both you and the computer pick the same thing, it prints **Draw**.
-    - Else, it checks if your combination beats the computer:
-        - **Rock (0) beats Scissors (2)**
-        - **Paper (1) beats Rock (0)**
-        - **Scissors (2) beats Paper (1)**
-    - If you win, it prints **You win**, otherwise **You loose** (typo: should be "lose", but it says "loose" in the notebook).
-- **If you’re new:** The backslash (`\`) is for breaking up a long logical line over two lines.
+- **What this does:**
+    - If you and the computer pick the same number, it’s a draw.
+    - If you pick the “winning” combination (like rock vs scissors), you win!
+    - Otherwise, you lose.
+- **How the rules work:**
+    - Rock (0) beats scissors (2)
+    - Paper (1) beats rock (0)
+    - Scissors (2) beats paper (1)
+- **Note:** `print` statements will tell you whether you won, lost, or got a draw.
 
 
-## How To Run
+## How To Play
 
-1. **Open the .ipynb file** in Google Colab, Jupyter Notebook, or Jupyter Lab.
-2. **Run the cells one by one.**
-3. **When prompted**, choose a number (0/1/2) and see if you beat the computer!
+1. **Open** the notebook (.ipynb) in Google Colab, Jupyter Notebook, or Jupyter Lab.
+2. **Run each cell in order** (usually by clicking a play button at the top left of each cell, or pressing Shift + Enter).
+3. **Enter your choice** when asked:
+    - 0 for rock
+    - 1 for paper
+    - 2 for scissors
+4. **See who wins!**
+
+## What’s Good About This Version?
+
+- The computer can pick any option (rock, paper, or scissors).
+- The spelling for `'scissors'` is correct.
+- The program tells you if you win, lose, or draw.
 
 
-Enjoy coding and playing! If you’re new, try making small changes and rerunning—it's a great way to learn.
+## Ideas to Improve
+
+- Print out what both the user and the computer picked, so you can see both choices.
+- Add a loop to play multiple rounds.
+- Catch errors if you type something other than 0, 1, or 2.
+
+Enjoy playing and experimenting!
+
+---
 
 <div style="text-align: center">⁂</div>
 
-[^1]: Rock_Paper_Scissors.ipynb
+[^1]: Rock_Paper_Scissors-1.ipynb
 
