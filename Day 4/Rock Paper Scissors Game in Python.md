@@ -88,20 +88,6 @@ else:
 2. **Run the cells one by one.**
 3. **When prompted**, choose a number (0/1/2) and see if you beat the computer!
 
-## Limitations
-
-- **The computer only picks 0 or 1 (rock or paper)!** It never picks 2 (scissors), because of a small bug: `np.random.randint(0,2)` should actually be `np.random.randint(0,3)`.
-- **Typo in dictionary (`Sissors`) and messages (`loose`):** These don’t affect gameplay, but are small spelling mistakes.
-
-
-## Improvements
-
-If you want to try making it better, here are a few ideas:
-
-- Change `np.random.randint(0,2)` to `np.random.randint(0,3)` so the computer can pick scissors too.
-- Fix the spelling: change `"Sissors"` to `"scissors"` and `"loose"` to `"lose"`.
-- Show the computer's actual pick before telling who won.
-- Loop the game so you can play multiple times.
 
 Enjoy coding and playing! If you’re new, try making small changes and rerunning—it's a great way to learn.
 
