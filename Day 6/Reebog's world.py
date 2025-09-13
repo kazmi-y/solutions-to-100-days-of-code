@@ -5,6 +5,7 @@ def turn_right():
 
 while front_is_clear()    #to avoid the infinite loops in clear areas/trick part
     move()
+    turn_left()
     
 while not at_goal():
     if right_is_clear():
